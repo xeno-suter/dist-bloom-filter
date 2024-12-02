@@ -38,7 +38,7 @@ Um zu testen, ob ein Element enthalten ist, wird überprüft, ob alle relevanten
     Ein Element, das nicht im Set ist, kann fälschlicherweise als enthalten erkannt werden.
     Die Wahrscheinlichkeit für ein \textit{false positive} steigt mit der Anzahl der Elemente im Set und der Anzahl der Hash-Funktionen.
     \item Keine Möglichkeit, die Anzahl der Elemente im Set zu bestimmen.
-    \item Keine Entfernung von Elementen möglich (außer mit \textit{Counting Bloom Filters}).
+    \item Keine Entfernung von Elementen möglich (ausser mit \textit{Counting Bloom Filters}).
 \end{itemize}
 
 \section{Implementierung Bloom Filters}\label{sec:implementierung-bloom-filters}
@@ -51,7 +51,7 @@ Die Anzahl der Hash-Funktionen beeinflusst die Wahrscheinlichkeit von \textit{fa
 Die Fehlerwahrscheinlichkeit wurde wie folgt getestet:
 \begin{itemize}
     \item Eine definierte Anzahl von Wörtern aus einer Datei \texttt{words.txt} wurde in den Bloom-Filter eingefügt.
-    \item Anschließend wurden 100'000 zufällige Wörter generiert, die sicher nicht in \texttt{words.txt} enthalten waren.
+    \item Anschliessend wurden 100'000 zufällige Wörter generiert, die sicher nicht in \texttt{words.txt} enthalten waren.
     \item Für jedes zufällige Wort wurde überprüft, ob der Bloom-Filter es als enthalten markiert.
     \item Die experimentelle Fehlerwahrscheinlichkeit wurde als Verhältnis der \textit{false positives} zur Anzahl der getesteten Wörter berechnet.
     \item Des Weiteren wurde die theoretische Fehlerwahrscheinlichkeit berechnet. Mit folgender Formel:
