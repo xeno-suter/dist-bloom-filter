@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "build-latex": "gulp buildLatex"
+  },
   "devDependencies": {
     "gulp": "^5.0.0",
     "gulp-shell": "^0.8.0",

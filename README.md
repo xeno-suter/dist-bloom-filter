@@ -1,9 +1,18 @@
+# Bloom Filter
+This Project is part of the course DIST.
+The project is about implementing a Bloom Filter in Java.
+With a small documentation in LaTeX.
+
+---
+
 ## **Setup Instructions**
 
 ### **Requirements**
 - **LaTex**
   - **Node.js** and **npm** installed on your system.
   - A LaTeX engine such as `pdflatex`, `xelatex`, or `lualatex` installed and available in your system's PATH.
+- **Java**
+  - **Java** installed on your system. (Version 22)
 
 ---
 

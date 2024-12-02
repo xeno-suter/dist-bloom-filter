@@ -2,8 +2,12 @@ const { src } = require('gulp');
 const shell = require('gulp-shell');
 
 function buildLatex() {
-    return src('*.tex', { read: false }) // Modify the path as needed
-        .pipe(shell(['pdflatex -interaction=nonstopmode <%= file.path %>']));
+    return src('./doc/*.tex', { read: false })
+        .pipe(shell([
+            'pdflatex -output-directory=./doc <%= file.path %>',
+            'pdflatex -output-directory=./doc <%= file.path %>',
+            'rm ./doc/*.aux ./doc/*.log ./doc/*.toc'
+        ]));
 }
 
-exports.build = buildLatex;
+exports.buildLatex = buildLatex;
