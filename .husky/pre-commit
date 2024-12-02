@@ -2,3 +2,15 @@
 . "$(dirname "$0")/_/husky.sh"
 
 npm run build-latex
+for texfile in ./doc/*.tex; do
+  if [ -f "$texfile" ]; then
+    pdffile="${texfile%.tex}.pdf"
+    if [ -f "$pdffile" ]; then
+      echo "Adding $pdffile to the staging area."
+      git add "$pdffile"
+    else
+      echo "Error: Failed to generate $pdffile."
+      exit 1
+    fi
+  fi
+done
