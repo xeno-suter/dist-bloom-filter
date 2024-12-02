@@ -13,6 +13,7 @@ With a small documentation in LaTeX.
   - A LaTeX engine such as `pdflatex`, `xelatex`, or `lualatex` installed and available in your system's PATH.
 - **Java**
   - **Java** installed on your system. (Version 22)
+  - **Maven** installed on your system.
 
 ---
 
